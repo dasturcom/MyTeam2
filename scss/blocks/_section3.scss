@@ -1,0 +1,79 @@
+.sectio3 {
+    background-color: $sectionColor;
+    @include padding (140px 0);
+}
+.section3-container {
+    position: relative;
+}
+.sectio3-h2 {
+    text-align: center;
+    @include margin (0 auto 56px);
+    @include WightHeight (932px, 96px);
+    @include fonts (normal, 700, 48px, 48px)
+}
+.sectio3-span {
+    color: #79C8C7;
+}
+.sectio3-ul {
+  position: relative;
+  @include reset-list;
+  display: flex;
+  justify-content: space-between;
+}
+.sectio3-li {
+    width: 350px;
+    text-align: center
+}
+.sectio3-li:hover {
+    width: 350px;
+    background-color: $headerBgColor;
+    box-shadow: 0 0 10px #79C8C7, 0 0 20px #79C8C7, 0 0 40px #79C8C7;
+    text-align: center
+}
+
+.li-img {
+    @include WightHeight (67px, 56px);
+    margin-bottom: -30px;
+}
+
+.sectio3-li-text {
+    @include reset-list;
+    @include margin-b (24px);
+    @include fonts (normal, 600, 15px, 25px);
+}
+.sectio3-li-title {
+    @include reset-list;
+    @include fonts (normal, 700, 18px, 28px);
+    margin-bottom: 2px;
+    color: #79C8C7;
+}
+.sectio3-li-p {
+    @include reset-list;
+    @include fonts ( normal, 600, 13px, 18px);
+    margin-bottom: 32px;
+    font-style: italic;
+}
+.sectio3-li-img {
+    @include WightHeight (62px, 62px)
+}
+
+.section3-container::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -140px;
+    left: -165px;
+    @include WightHeight (147px, 100px);
+    background-image: url(/img/Group4.svg)
+}
+
+.sectio3-ul::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 347px;
+    left: 1119px;
+    @include WightHeight (200px, 100px);
+    background-image: url(/img/Group7.svg)
+}
+

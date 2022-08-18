@@ -1,0 +1,108 @@
+.footer {
+    background-color: $footerColor;
+    @include padding (48px 0)
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-div {
+display: flex;
+align-items: center;
+}
+
+.footer-logo {
+    @include margin-r (125px);
+}
+.footer-logo-img {
+    @include WightHeight (150px, 40px);
+}
+.footernav-ul {
+    @include reset-list;
+    display: flex;
+}
+.footerrnav-li {
+    margin-top: 25px;
+    margin-right: 40px;
+}
+
+.footer-link {
+    padding: 1px 5px;
+    position: relative;
+    @include fonts (normal, 600, 18px, 28px);
+    @include LinkResetList (none, $color);
+    transition: all 0.5s linear;
+}
+
+.footer-link:hover {
+    color: #F67E7E;
+    background-color: #fff;
+    box-shadow: 0 0 10px #fff, 0 0 20px #00b3ff, 0 0 40px #00b3ff;
+}
+
+
+.footer-link span {
+    display: block;
+    position: absolute;
+    background-color: #F67E7E;
+    transition: all .4s ease-in-out;
+}
+
+.footer-link span:nth-child(odd) {
+    width: 0%;
+    height: 2px;
+}
+
+.footer-link span:nth-child(even) {
+    width: 2px;
+    height: 0%;
+}
+
+.footer-link span:nth-child(1){
+    left: 0;
+    bottom: 0;
+}
+.footer-link span:nth-child(2){
+    right: 0;
+    bottom: 0;
+}
+.footer-link span:nth-child(3){
+    right: 0;
+    top: 0;
+}
+.footer-link span:nth-child(4){
+    top: 0;
+    left: 0;
+}
+
+.footer-link:hover span:nth-child(odd){
+    width: 100%;
+    height: 1px;
+}
+
+.footer-link:hover span:nth-child(even){
+    width: 1px;
+    height: 100%;
+}
+
+.footer-text-p {
+    opacity: 0.6;
+    @include reset-list;
+}
+
+.link-div {
+    margin-left: 160px;
+    margin-bottom: 61px;
+    justify-content: space-between;
+}
+.link-footer {
+  margin-right: 16px;
+  display: inline-block;
+}
+
+.footer-p {
+    @include fonts (normal, 600, 15px, 25px);
+    opacity: 0.6;
+}

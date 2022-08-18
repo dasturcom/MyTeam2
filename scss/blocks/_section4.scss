@@ -1,0 +1,40 @@
+.section4 {
+    @include padding (76px 0);
+    background-color: $section;
+}
+.section4-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.section4-h2 {
+    @include fonts (normal, 700, 48px, 48px);
+    color: $mainSectionColor;
+}
+.section4-link {
+    margin-left: auto;
+    border: 2px solid $mainSectionColor;
+    border-radius: 24px;
+    transition: all 0.5s linear ;
+    @include LinkResetList (none, $mainSectionColor);
+    @include fonts (normal, 600, 18px, 28px); 
+    @include padding (9px 32px)
+}
+
+.section4-link:hover {
+    color: #fff;
+    box-shadow: 0 0 10px #fff, 0 0 20px #ff5d5d, 0 0 100px #ff0000;
+    background-color: #002529;
+}
+
+
+.section4-container::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 64px;
+    left: -160px;
+    @include WightHeight (200px, 140px);
+    background-image: url(/img/Group8.svg)
+}
