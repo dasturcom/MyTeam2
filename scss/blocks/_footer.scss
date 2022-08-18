@@ -9,8 +9,8 @@
 }
 
 .footer-div {
-display: flex;
-align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 .footer-logo {
@@ -98,11 +98,136 @@ align-items: center;
     justify-content: space-between;
 }
 .link-footer {
-  margin-right: 16px;
-  display: inline-block;
+    margin-right: 16px;
+    display: inline-block;
 }
 
 .footer-p {
     @include fonts (normal, 600, 15px, 25px);
     opacity: 0.6;
+}
+
+// tablet
+
+@include breakpoint-down (768px) {
+    .footer {
+        @include padding (56px 0)
+    }
+
+    .footer-container {
+        display: block;
+    }
+
+    .footer-div {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .footer-logo {
+        @include margin-r (125px);
+    }
+    .footer-logo-img {
+        @include WightHeight (95px, 24px);
+        margin-bottom: 53px;
+    }
+    .footernav-ul {
+        @include reset-list;
+        display: flex;
+    }
+    .footerrnav-li {
+        margin-top: 0;
+        margin-right: -14px;
+    }
+
+    .footer-link {
+        padding: 1px 5px;
+        margin-right: 24px;
+        @include fonts (normal, 600, 15px, 25px);
+    }
+
+    .footer-text-p {
+        text-align: right;
+    }
+
+    .footer-img {
+        display: flex;
+        align-items: center;
+        margin-top: 34px;
+        justify-content: space-between;
+    }
+
+    .link-div {
+        margin-left: 0px;
+        margin-bottom: 0px;
+        justify-content: space-between;
+    }
+}
+
+// Mobile
+
+@include breakpoint-down (568px) {
+    .footer {
+        @include padding (64px 0)
+    }
+    
+    .footer-container {
+        display: block;
+        text-align: center;
+    }
+    
+    .footer-div {
+        display: inline-table;
+        justify-content: center;
+    }
+    .footer-logo {
+        margin-right: 0;
+    }
+    .footer-logo-img {
+        @include WightHeight (95px, 24px);
+        margin-bottom: 24px;
+    }
+    .footernav-ul {
+        @include reset-list;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 24px;
+    }
+
+    .right {
+        margin: 0;
+    }
+    
+    .footer-link:nth-last-child(1) {
+        padding: 1px 5px;
+        position: relative;
+        margin-right: 12px;
+        @include fonts (normal, 600, 18px, 28px);
+        @include LinkResetList (none, $color);
+        transition: all 0.5s linear;
+    }
+    
+    .footer-text-p {
+        text-align: center;
+    }
+
+    .footer-img {
+        display: block;
+        margin-bottom: 40px;
+    }
+    
+    .link-div {
+        margin-left: 0px;
+        margin-bottom: 0px;
+        justify-content: space-between;
+    }
+    .link-footer {
+      margin-right: 16px;
+      display: inline-block;
+    }
+    
+    .footer-p {
+        @include fonts (normal, 600, 15px, 25px);
+        opacity: 0.6;
+    }
 }

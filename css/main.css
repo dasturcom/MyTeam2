@@ -1103,6 +1103,126 @@ img {
   opacity: 0.6;
 }
 
+@media only screen and (max-width: 768px) {
+  .footer {
+    padding: 56px 0;
+  }
+  .footer-container {
+    display: block;
+  }
+  .footer-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .footer-logo {
+    margin-right: 125px;
+  }
+  .footer-logo-img {
+    width: 95px;
+    height: 24px;
+    margin-bottom: 53px;
+  }
+  .footernav-ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+  }
+  .footerrnav-li {
+    margin-top: 0;
+    margin-right: -14px;
+  }
+  .footer-link {
+    padding: 1px 5px;
+    margin-right: 24px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .footer-text-p {
+    text-align: right;
+  }
+  .footer-img {
+    display: flex;
+    align-items: center;
+    margin-top: 34px;
+    justify-content: space-between;
+  }
+  .link-div {
+    margin-left: 0px;
+    margin-bottom: 0px;
+    justify-content: space-between;
+  }
+}
+@media only screen and (max-width: 568px) {
+  .footer {
+    padding: 64px 0;
+  }
+  .footer-container {
+    display: block;
+    text-align: center;
+  }
+  .footer-div {
+    display: inline-table;
+    justify-content: center;
+  }
+  .footer-logo {
+    margin-right: 0;
+  }
+  .footer-logo-img {
+    width: 95px;
+    height: 24px;
+    margin-bottom: 24px;
+  }
+  .footernav-ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+  }
+  .right {
+    margin: 0;
+  }
+  .footer-link:nth-last-child(1) {
+    padding: 1px 5px;
+    position: relative;
+    margin-right: 12px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.5s linear;
+  }
+  .footer-text-p {
+    text-align: center;
+  }
+  .footer-img {
+    display: block;
+    margin-bottom: 40px;
+  }
+  .link-div {
+    margin-left: 0px;
+    margin-bottom: 0px;
+    justify-content: space-between;
+  }
+  .link-footer {
+    margin-right: 16px;
+    display: inline-block;
+  }
+  .footer-p {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    opacity: 0.6;
+  }
+}
 .header {
   padding: 73px 0 250px 0;
 }
