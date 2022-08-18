@@ -62,6 +62,11 @@
   height: $height;
 }
 
+@mixin wight ($wight, $max) {
+  width: $wight;
+  max-width: $max;
+}
+
 // Yozu fontlari
 
 @mixin fonts ($fst, $fw, $fs, $lh,) {

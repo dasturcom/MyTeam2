@@ -4,103 +4,81 @@
   background-color: $mainSectionColor;
 }
 .section2-container {
-  position: relative;
   display: flex;
-  align-items: flex-start;
   justify-content: space-between;
 }
-
 .section2-div {
+  height: 202px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  @include WightHeight (445px, 202px)
 }
-
-.section2-span {
-  width: 50px;
-  height: 2px;
+.section2-line {
   display: block;
-  background: $section;
+  @include WightHeight (50px, 4px);
+  background-color: $section;
 }
-
 .section2-h2 {
   @include reset-list;
-  @include WightHeight (445px, 144px);
-  @include fonts (normal, 700, 48px, 48px)
+  @include  wight (100%, 445px);
+  @include fonts (normal, 700, 48px, 48px);
 }
-
 .section2-ul {
   @include reset-list;
 }
 .section2-li {
   display: flex;
-  
-}
-.section2-li:nth-last-child(3) {
-  @include margin-b (32px);
-  margin-top: 62px;
-}
-.section2-li:nth-last-child(2) {
-  @include margin-b (32px);
+  @include  wight (100%, 540px);
 }
 
 .section2-li::before {
   content: "";
   display: block;
-  object-fit: contain;
-  margin-right: 23px;
-  @include WightHeight (72px, 72px);
-  background-image: url(/img/Group0.svg)
+  width: 72px;
+  height: 72px;
+  background-image: url(/img/Group0.svg);
 }
 
 .li1::before {
   content: "";
   display: block;
-  object-fit: contain;
-  margin-right: 23px;
-  @include WightHeight (72px, 72px);
-  background-image: url(/img/Group12.svg)
+  width: 72px;
+  height: 72px;
+  background-image: url(/img/Group12.svg);
 }
 
 .li2::before {
   content: "";
   display: block;
-  object-fit: contain;
-  margin-right: 23px;
-  @include WightHeight (72px, 72px);
-  background-image: url(/img/Group13.svg)
+  width: 72px;
+  height: 72px;
+  background-image: url(/img/Group13.svg);
+}
+
+.section2-li:nth-last-child(3) {
+  margin-top: 50px;
+  margin-bottom: 32px;
+}
+.section2-li:nth-last-child(2) {
+  margin-bottom: 32px;
 }
 
 .section2-li-text {
-  @include WightHeight (445px, 94px);
+  margin-left: 23px;
+  @include  wight (100%, 445px);
 }
-
 .section2-li-h3 {
-  @include WightHeight (445px, 28px);
   @include fonts (normal, 700, 18px, 28px);
-  @include reset-list;
-  @include margin-b (16px);
   color: $section;
+  @include reset-list;
 }
 .section2-li-p {
-  @include WightHeight (445px, 50px);
   @include fonts (normal, 600, 15px, 25px);
   @include reset-list;
+  opacity: 0.8;
 }
 
-.section2-container::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 299px;
-  left: 1238px;
-  object-fit: cover;
-  @include WightHeight (100px, 244px);
-  background-image: url(/img/Group3.svg);
-}
-
-// Tablet
+// Tapblet
 
 @include breakpoint-down (768px) {
   .section2 {
@@ -108,133 +86,64 @@
     @include padding (100px 0);
   }
   .section2-container {
-    position: relative;
     display: block;
+    padding: 0 98px ;
   }
-  
   .section2-div {
-    display: flex;
-    max-width: 100%;
+    height: 100px;
   }
-  
   .section2-h2 {
-    width: 100%;
-    max-width: 445px;
-    @include fonts ( 32px, 32px)
-  }
-  
-  .section2-li-text {
-    width: 100%;
-    max-width: 445px;
-  }
-  
-  .section2-li-h3 {
-    width: 100%;
-    max-width: 445px;
-  }
-  .section2-li-p {
-    width: 100%;
-    max-width: 445px;
-  }
-  
-  .section2-container::before {
-    @include WightHeight (0px, 0px);
-    background-image: url(/img/.svg);
+    @include  wight (100%, 445px);
+    @include fonts (normal, 700, 32px, 32px);
   }
 }
 
-// Mobile
+// Moblile
 
 @include breakpoint-down (568px) {
   .section2 {
-    position: relative;
     @include padding (64px 0);
   }
   .section2-container {
-    position: relative;
-    display: flex;
+    display: block;
+    padding: 0 20px;
   }
-  
   .section2-div {
+    height: 190px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    @include WightHeight (240px, 202px)
   }
-  
   .section2-h2 {
-    @include reset-list;
-    @include WightHeight (445px, 144px);
-    @include fonts (normal, 700, 48px, 48px)
+    @include  wight (100%, 240px);
   }
-  
   .section2-ul {
     @include reset-list;
   }
   .section2-li {
-    display: flex;
-    
-  }
-  .section2-li:nth-last-child(3) {
-    @include margin-b (32px);
-    margin-top: 62px;
-  }
-  .section2-li:nth-last-child(2) {
-    @include margin-b (32px);
+    display: block;
+    text-align: center;
+    @include  wight (100%, 540px);
   }
   
   .section2-li::before {
-    content: "";
-    display: block;
-    object-fit: contain;
-    margin-right: 23px;
-    @include WightHeight (72px, 72px);
-    background-image: url(/img/Group0.svg)
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16px;
   }
   
-  .li1::before {
-    content: "";
-    display: block;
-    object-fit: contain;
-    margin-right: 23px;
-    @include WightHeight (72px, 72px);
-    background-image: url(/img/Group12.svg)
-  }
   
-  .li2::before {
-    content: "";
-    display: block;
-    object-fit: contain;
-    margin-right: 23px;
-    @include WightHeight (72px, 72px);
-    background-image: url(/img/Group13.svg)
+  .section2-li:nth-last-child(3) {
+    margin-top: 56px;
+    margin-bottom: 48px;
+  }
+  .section2-li:nth-last-child(2) {
+    margin-bottom: 48px;
   }
   
   .section2-li-text {
-    @include WightHeight (445px, 94px);
-  }
-  
-  .section2-li-h3 {
-    @include WightHeight (445px, 28px);
-    @include fonts (normal, 700, 18px, 28px);
-    @include reset-list;
-    @include margin-b (16px);
-    color: $section;
-  }
-  .section2-li-p {
-    @include WightHeight (445px, 50px);
-    @include fonts (normal, 600, 15px, 25px);
-    @include reset-list;
-  }
-  
-  .section2-container::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 299px;
-    left: 1238px;
-    object-fit: cover;
-    @include WightHeight (100px, 244px);
-    background-image: url(/img/Group3.svg);
+    margin-left: auto;
+    margin-right: auto;
+    @include  wight (100%, 327px);
   }
 }
