@@ -1,0 +1,35 @@
+.about {
+    @include padding (73px 0 124px)
+}
+
+.about-section {
+    background-image: url(../../img/Group9.svg);
+    background-repeat: no-repeat;
+    background-position: calc(50% - -750px) bottom;
+    @include padding (0 0 120px);
+}
+.about-section-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.about-section-h1 {
+    @include WightHeight (350px, 100px);
+    @include fonts (normal, 700, 64px, 100px);
+    @include reset-list;
+}
+.about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @include WightHeight (774px, 112px);
+}
+.about-span {
+    display: block;
+    @include WightHeight (50px, 4px);
+    background-color: $section;
+}
+.about-text-p {
+    @include wight (100%, 730px);
+    @include reset-list;
+}

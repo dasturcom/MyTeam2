@@ -1,7 +1,7 @@
 .sectio3 {
-    background-image: url(/img/Group7.svg);
+    background-image: url(../../img/Group7.svg), url(../../img/Group4.svg);
     background-repeat: no-repeat;
-    background-position: calc(50% + 575px) bottom;
+    background-position: calc(50% + 650px) bottom, calc(50% - 677px) top,;
     background-color: $sectionColor;
     @include padding (140px 0);
 }

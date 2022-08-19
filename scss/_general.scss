@@ -11,6 +11,7 @@ body {
   height: 100%;
   font-family: "Livvic", sans-serif;   
   background-color: $headerBgColor;    
+  box-sizing: border-box;
   color: $color;  
   font-size: 16px;
   line-height: 1.5;

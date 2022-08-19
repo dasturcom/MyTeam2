@@ -1,7 +1,7 @@
 .section1 {
-    background-image: url(../../img/Group2.svg);
+    background-image: url(../../img/Group.svg), url(../../img/Group2.svg);
     background-repeat: no-repeat;
-    background-position: calc(50% + 355px) calc(50% + 230px);
+    background-position: calc(50% - 750px) calc(50% - 100px), calc(50% + 355px) calc(50% + 230px),;
     @include padding-b (250px);
 }
 .section1-container{
@@ -26,7 +26,7 @@
     @include WightHeight (445px, 195px)
 }
 .span {
-    @include WightHeight (50px, 2px);
+    @include WightHeight (50px, 4px);
     display: block;
     background: #79C8C7;
 }

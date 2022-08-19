@@ -1,4 +1,7 @@
 .section2 {
+  background-image: url(../../img/Group8.svg);
+  background-repeat: no-repeat;
+  background-position: calc(50% + 746px) calc(50% - -255px);
   position: relative;
   @include padding (140px 0);
   background-color: $mainSectionColor;

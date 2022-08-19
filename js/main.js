@@ -1,0 +1,1 @@
+alert("Assalomu alykum mijoz bizni web saytimizga kirganizdan hursantmiz");

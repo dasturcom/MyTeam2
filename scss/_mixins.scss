@@ -112,6 +112,11 @@
   margin-left: $left;
 }
 
+@mixin margin-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 // Padding
 
 @mixin padding-trbl ($top, $right, $bottom, $left) {
