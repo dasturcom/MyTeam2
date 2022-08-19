@@ -315,8 +315,6 @@ html {
 }
 
 body {
-  display: flex;
-  flex-direction: column;
   height: 100%;
   font-family: "Livvic", sans-serif;
   background-color: #014E56;
@@ -426,6 +424,9 @@ img {
   }
 }
 .sectio3 {
+  background-image: url(/img/Group7.svg);
+  background-repeat: no-repeat;
+  background-position: calc(50% + 575px) bottom;
   background-color: #004047;
   padding: 140px 0;
 }
@@ -514,28 +515,6 @@ img {
 .sectio3-li-img {
   width: 62px;
   height: 62px;
-}
-
-.section3-container::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: -140px;
-  left: -165px;
-  width: 147px;
-  height: 100px;
-  background-image: url(/img/Group4.svg);
-}
-
-.sectio3-ul::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 347px;
-  left: 1119px;
-  width: 200px;
-  height: 100px;
-  background-image: url(/img/Group7.svg);
 }
 
 @media only screen and (max-width: 768px) {
@@ -837,11 +816,13 @@ img {
   }
 }
 .section1 {
+  background-image: url(../../img/Group2.svg);
+  background-repeat: no-repeat;
+  background-position: calc(50% + 355px) calc(50% + 230px);
   padding-bottom: 250px;
 }
 
 .section1-container {
-  position: relative;
   display: flex;
   justify-content: space-between;
 }

@@ -1,5 +1,6 @@
 .header {
-    @include padding (73px 0 250px 0)
+    @include padding (73px 0 250px 0); 
+    
 }
 .header-container {
     display: flex;

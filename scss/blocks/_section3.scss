@@ -1,4 +1,7 @@
 .sectio3 {
+    background-image: url(/img/Group7.svg);
+    background-repeat: no-repeat;
+    background-position: calc(50% + 575px) bottom;
     background-color: $sectionColor;
     @include padding (140px 0);
 }
@@ -55,26 +58,6 @@
 }
 .sectio3-li-img {
     @include WightHeight (62px, 62px)
-}
-
-.section3-container::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: -140px;
-    left: -165px;
-    @include WightHeight (147px, 100px);
-    background-image: url(/img/Group4.svg)
-}
-
-.sectio3-ul::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 347px;
-    left: 1119px;
-    @include WightHeight (200px, 100px);
-    background-image: url(/img/Group7.svg)
 }
 
 // Tablet

@@ -1,8 +1,10 @@
 .section1 {
-    @include padding-b (250px)
+    background-image: url(../../img/Group2.svg);
+    background-repeat: no-repeat;
+    background-position: calc(50% + 355px) calc(50% + 230px);
+    @include padding-b (250px);
 }
 .section1-container{
-    position: relative;
     display: flex;
     justify-content: space-between;
 }
