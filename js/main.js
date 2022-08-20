@@ -1,1 +1,1 @@
-alert("Assalomu alykum mijoz bizni web saytimizga kirganizdan hursantmiz");
+// alert("Assalomu alykum mijoz bizni web saytimizga kirganizdan hursantmiz");

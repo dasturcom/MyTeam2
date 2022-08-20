@@ -367,6 +367,7 @@ img {
 }
 
 .about-section1-ul {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -431,14 +432,6 @@ img {
   padding: 0;
   margin: 0;
   list-style-type: none;
-}
-
-.none {
-  display: none;
-}
-.none:hover {
-  transform: translateY(-150px);
-  display: block;
 }
 
 .about {
