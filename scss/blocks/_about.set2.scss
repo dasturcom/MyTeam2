@@ -1,0 +1,77 @@
+.about-section2 {
+    background-image: url(../../img/clients-bg.svg);
+    background-repeat: no-repeat;
+    background-position: calc(50% - 650px) top ;
+    background-color: $mainSectionColor;
+    @include padding (140px 0);
+}
+.about-section2-h2 {
+    @include fonts (normal, 700, 48px, 48px);
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+.about-section2-div {
+    @include wight (100%, 1110px);
+    display: flex;
+    justify-content: space-between;
+}
+.about-section2-div-img {
+    width: 184px;
+    height: 28px;
+}
+
+@include breakpoint-down (768px) {
+    .about-section2 {
+        background-image: url(../../img/clients-bg.svg);
+        background-repeat: no-repeat;
+        background-position: calc(50% - 650px) top ;
+        background-color: $mainSectionColor;
+        @include padding (100px 0);
+    }
+    .about-section2-h2 {
+        @include fonts (normal, 700, 32px, 32px);
+        text-align: center;
+        margin-bottom: 64px;
+    }
+    
+    .about-section2-div {
+        @include wight (100%, 1110px);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .about-section2-div-img {
+        width: 103px;
+        height: 17px;
+    }
+}
+
+@include breakpoint-down (568px) {
+    .about-section2 {
+        background-image: url(../../img/clients-bg.svg);
+        background-repeat: no-repeat;
+        background-position: calc(50% - 650px) top ;
+        background-color: $mainSectionColor;
+        @include padding (100px 0);
+    }
+    .about-section2-h2 {
+        @include fonts (normal, 700, 32px, 32px);
+        text-align: center;
+        margin-bottom: 64px;
+    }
+    
+    .about-section2-div {
+        @include wight (100%, 1110px);
+        display: block;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .about-section2-div-img {
+        display: block;
+        @include margin-auto;
+        margin-bottom: 55px;
+        @include WightHeight (146px, 24px);
+    }
+}

@@ -33,3 +33,47 @@
     @include wight (100%, 730px);
     @include reset-list;
 }
+
+@include breakpoint-down (768px) {
+    .about {
+        @include padding (112px 0 112px)
+    }
+    
+    .about-section {
+        background-image: url(../../img/Group9.svg);
+        background-repeat: no-repeat;
+        background-position: calc(50% - -750px) bottom;
+        @include padding (0 0 120px);
+    }
+    .about-section-container {
+        display: block;
+        text-align: center;
+    }
+    .about-section-h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 16px;
+        @include wight (100%, 768px);
+        @include fonts (normal, 700, 64px, 65px);
+        // @include reset-list;
+    }
+    .about-text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include wight (100%, 774px);
+    }
+    .about-span {
+        display: none;
+    }
+    .about-text-p {
+        text-align: center;
+        @include reset-list;
+        @include wight (100%, 457px);
+    }
+}
+
+@include breakpoint-down (568px) {
+
+}
