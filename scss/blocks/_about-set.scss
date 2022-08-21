@@ -75,5 +75,7 @@
 }
 
 @include breakpoint-down (568px) {
-
+    .about {
+        @include padding (48px 0 80px)
+    }
 }

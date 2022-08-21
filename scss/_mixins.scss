@@ -145,3 +145,11 @@
 @mixin padding-l ($left) {
   padding-left: $left;
 }
+
+// Backgrount
+
+@mixin backgrount ($backgrount-img, $backgrount-rep, $backgrount-pos) {
+  background-image: $backgrount-img;
+  background-repeat: $backgrount-rep;
+  background-position:  $backgrount-pos;
+}

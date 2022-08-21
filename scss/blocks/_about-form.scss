@@ -1,0 +1,102 @@
+.form {
+    display: block;
+}
+.from-input {
+    display: block;
+    @include padding (16px);
+    background-color: transparent;
+    border: 0;
+    @include WightHeight (445px, 20px);
+}
+.form-span {
+    display: block;
+    width: 540px;
+    height: 1px;
+    background-color: $color;
+}
+.submit {
+    padding: 9px 32px;
+    border: 2px solid #FFFFFF;
+    border-radius: 24px;
+    margin-top: 24px;
+    transition: all 0.5s linear;
+}
+.submit:hover {
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #79c8c7;
+    background-color: #fff;
+}
+
+// Tablet
+
+@include breakpoint-down (768px) {
+    .form {
+        display: block;
+    }
+
+    .contact-section-container {
+        display: block;
+    }
+
+    .from-input {
+        display: block;
+        @include padding (16px);
+        background-color: transparent;
+        border: 0;
+        @include wight (100%, 445px);
+    }
+    .form-span {
+        display: block;
+        width: 540px;
+        height: 1px;
+        background-color: $color;
+    }
+    .submit {
+        padding: 9px 32px;
+        border: 2px solid #FFFFFF;
+        border-radius: 24px;
+        margin-top: 24px;
+        transition: all 0.5s linear;
+    }
+    .submit:hover {
+        box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #79c8c7;
+        background-color: #fff;
+    }
+}
+
+// Mobile
+
+@include breakpoint-down (568px) {
+    .form {
+        display: block;
+    }
+
+    .contact-section-container {
+        padding-left: 24px;
+        padding-right: 24px;
+        display: block;
+    }
+
+    .from-input {
+        display: block;
+        @include padding (16px);
+        background-color: transparent;
+        border: 0;
+        @include wight (100%, 445px);
+    }
+    .form-span {
+        display: block;
+        @include wight (100%, 520px);
+        background-color: $color;
+    }
+    .submit {
+        padding: 9px 32px;
+        border: 2px solid #FFFFFF;
+        border-radius: 24px;
+        margin-top: 24px;
+        transition: all 0.5s linear;
+    }
+    .submit:hover {
+        box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #79c8c7;
+        background-color: #fff;
+    }
+}

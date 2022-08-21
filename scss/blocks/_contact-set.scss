@@ -1,0 +1,168 @@
+.contact-section {
+    background-image: url(../../img/Group10.svg), url(../../img/Group11.svg);
+    background-repeat: no-repeat;
+    background-position:calc(50% - 750px) top,  calc(50% - -750px) bottom;
+    padding-bottom: 120px;
+}
+.contact-section-container {
+    padding-left: 98px;
+    padding-right: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact-section-h1 {
+    @include fonts (normal, 700, 64px, 100px);
+    margin-bottom: 16px;
+    @include reset-list;
+}
+.contact-section-p {
+    @include fonts (normal, 700, 32px, 48px);
+    @include reset-list;
+    margin-bottom: 32px;
+    color: $section;
+}
+.contact-section-ul {
+    @include reset-list;
+}
+.contact-section-li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+.contact-section-li::before {
+    content: "";
+    display: block;
+    width: 72px;
+    height: 72px;
+    margin-right: 10px;
+    background-image: url(../../img/Group0.svg);
+}
+.li1::before {
+    content: "";
+    display: block;
+    width: 72px;
+    height: 72px;
+    margin-right: 10px;
+    background-image: url(../../img/Group12.svg);
+}
+.li2::before {
+    content: "";
+    display: block;
+    width: 72px;
+    height: 72px;
+    margin-right: 10px;
+    background-image: url(../../img/Group13.svg);
+}
+
+.contact-section-li-p {
+    @include fonts (normal, 700, 18px, 28px)
+}
+
+// Tablet
+
+@include breakpoint-down (768px) {
+    .contact-section {
+        background-image: url(../../img/Group10.svg), url(../../img/Group11.svg);
+        background-repeat: no-repeat;
+        background-position:calc(50% - 750px) top,  calc(50% - -750px) bottom;
+        padding-bottom: 112px;
+    }
+    .contact-section-h1 {
+        @include fonts (normal, 700, 64px, 56px);
+    }
+    .contact-section-ul {
+        @include reset-list;
+        margin-bottom: 64px;
+    }
+    .contact-section-li {
+        @include wight (100%, 445px);
+        display: flex;
+        align-items: center;
+        margin-bottom: 8px;
+    }
+}
+
+// Tablet
+
+@include breakpoint-down (768px) {
+    .contact-section {
+        background-image: url(../../img/Group10.svg), url(../../img/Group11.svg);
+        background-repeat: no-repeat;
+        background-position:calc(50% - 750px) top,  calc(50% - -750px) bottom;
+        padding-bottom: 112px;
+    }
+    .contact-section-h1 {
+        @include fonts (normal, 700, 64px, 56px);
+    }
+    .contact-section-ul {
+        @include reset-list;
+        margin-bottom: 64px;
+    }
+    .contact-section-li {
+        @include wight (100%, 445px);
+        display: flex;
+        align-items: center;
+        margin-bottom: 8px;
+    }
+}
+
+// Mobile
+
+@include breakpoint-down (768px) {
+    .contact-section {
+        background-image: url(../../img/Group10.svg), url(../../img/Group11.svg);
+        background-repeat: no-repeat;
+        background-position:calc(50% - 750px) top,  calc(50% - -750px) bottom;
+        padding-bottom: 120px;
+    }
+    .contact-section-container {
+        padding-left: 98px;
+        padding-right: 24px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .contact-section-h1 {
+        text-align: center;
+        @include fonts (normal, 700, 40px, 40px);
+    }
+    .contact-section-p {
+        text-align: center;
+        margin-bottom: 32px;
+        color: $section;
+    }
+    .contact-section-ul {
+        @include reset-list;
+        margin-bottom: 56px;
+    }
+    .contact-section-li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 8px;
+    }
+    .contact-section-li::before {
+        content: "";
+        display: block;
+        width: 120px;
+        height: 72px;
+        margin-right: 10px;
+        background-image: url(../../img/Group0.svg);
+    }
+    .li1::before {
+        content: "";
+        display: block;
+        width: 136px;
+        height: 72px;
+        margin-right: 10px;
+        background-image: url(../../img/Group12.svg);
+    }
+    .li2::before {
+        content: "";
+        display: block;
+        width: 100px;
+        height: 72px;
+        margin-right: 10px;
+        background-image: url(../../img/Group13.svg);
+    }
+}
